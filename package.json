@@ -6,7 +6,7 @@
         "url": "https://github.com/vk4s"
     },
     "private": true,
-    "version": "0.1.8",
+    "version": "0.1.9",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
