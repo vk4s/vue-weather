@@ -54,6 +54,23 @@ export default {
         },
         setResults(results) {
             this.weather = results;
+
+            let appElement = document.querySelector("#app");
+            let bodyElement = document.querySelector("body");
+
+            if (this.weather.main.temp > 25) {
+                appElement.classList.remove("cool");
+                appElement.classList.add("warm");
+
+                bodyElement.classList.remove("bcool");
+                bodyElement.classList.add("bwarm");
+            } else {
+                appElement.classList.remove("warm");
+                appElement.classList.add("cool");
+
+                bodyElement.classList.remove("bwarm");
+                bodyElement.classList.add("bcool");
+            }
         },
     },
 };
@@ -74,6 +91,22 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.bwarm {
+    background: linear-gradient(165deg, #a5506d, #6e2434) !important;
+}
+
+.bcool {
+    background: linear-gradient(165deg, #bae0ff, #1c4a7e) !important;
+}
+
+.warm {
+    background-image: url("./assets/warm.bmp") !important;
+}
+
+.cool {
+    background-image: url("./assets/cold.bmp") !important;
 }
 
 #app {
