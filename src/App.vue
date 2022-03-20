@@ -1,5 +1,12 @@
 <template>
     <main>
+        <div class="header">
+            <img width="50px" height="50px" src="/favicon.svg" alt="Weather Icon" />
+            <h2 class="title">Weather</h2>
+            Copyright &copy;
+            <a href="https://github.com/vk4s" target="_blank">Vikash Patel</a> and
+            <a href="https://www.lorbic.com" target="_blank">Lorbic.com</a>
+        </div>
         <div class="search-box">
             <input
                 type="text"
@@ -204,5 +211,14 @@ main {
     font-weight: 700;
     font-style: italic;
     text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+a {
+    color: white;
 }
 </style>
