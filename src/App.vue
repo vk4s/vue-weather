@@ -113,15 +113,15 @@ body {
 }
 
 .warm {
-    background-image: url("./assets/warm.bmp") !important;
+    background-image: url("./assets/warm.jpg") !important;
 }
 
 .cool {
-    background-image: url("./assets/cold.bmp") !important;
+    background-image: url("./assets/cold.jpg") !important;
 }
 
 #app {
-    background-image: url("./assets/cold.bmp");
+    background-image: url("./assets/cold.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
