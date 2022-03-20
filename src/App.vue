@@ -58,7 +58,7 @@ export default {
             let appElement = document.querySelector("#app");
             let bodyElement = document.querySelector("body");
 
-            if (this.weather.main.temp > 25) {
+            if (this.weather.main.temp > 20) {
                 appElement.classList.remove("cool");
                 appElement.classList.add("warm");
 
