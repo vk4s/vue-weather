@@ -83,6 +83,10 @@ export default {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: "montserat", sans-serif;
     display: flex;
@@ -121,23 +125,23 @@ body {
 
 main {
     height: 100vh;
-    width: 500px;
+    max-width: 30rem;
     background: linear-gradient(to bottom, rgb(0, 0, 0, 0.25), rgb(0, 0, 0, 0.75));
-    padding: 20px;
+    padding: 2rem;
 }
-
-/* .search-box {
-    width: 100%;
-} */
-
+/*
+.search-box {
+    width: 90%;
+}
+*/
 .search-box .search-bar {
     display: block;
     width: 100%;
-    padding: 15px;
+    padding: 1.5rem;
     margin: auto;
 
     color: #313131;
-    font-size: 20px;
+    font-size: 2rem;
 
     appearance: none;
     border: none;
@@ -161,7 +165,7 @@ main {
 
 .location-box .location {
     color: white;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 500;
     text-align: center;
     text-shadow: 1px 3px rgba(0, 0, 0, 0.25);
@@ -169,7 +173,7 @@ main {
 
 .location-box .date {
     color: white;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 100;
     font-style: italic;
     text-align: center;
@@ -183,8 +187,8 @@ main {
     display: inline-block;
     padding: 10px 25px;
     color: white;
-    font-size: 100px;
-    font-weight: 900px;
+    font-size: 4rem;
+    font-weight: 900;
 
     text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
     background-color: rgba(255, 255, 255, 0.25);
@@ -196,7 +200,7 @@ main {
 
 .weather-box .weather {
     color: white;
-    font-size: 48px;
+    font-size: 4rem;
     font-weight: 700;
     font-style: italic;
     text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
