@@ -11,7 +11,8 @@
         "dev": "vite",
         "build": "vite build",
         "preview": "vite preview",
-        "dist": "vite build && cp -r ./dist/* ./public"
+        "dist": "vite build && cp -r ./dist/* ./public",
+        "start": "vite build && cp -r ./dist/* ./"
     },
     "dependencies": {
         "vue": "^3.2.25"
